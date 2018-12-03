@@ -1,0 +1,55 @@
+1	X
+2	Y
+3	Z
+4	Conductivity
+5	Specific Heat
+6	Density
+7	Static Entropy
+8	Shear Strain Rate
+9	Static Enthalpy
+10	X Wall Heat Flux
+11	Y Wall Heat Flux
+12	Z Wall Heat Flux
+13	Volume Porosity
+14	Pressure
+15	Absolute Pressure
+16	Total Pressure
+17	Temperature
+18	Aspect Ratio
+19	Courant Number
+20	Volume of Finite Volumes
+21	X Bul Momentum Flow Rate
+22	Y Bild Momentum Flow Rate
+23	Z Bild Momentum Flow Rate
+24	X Pressure.Gradient
+25	Y Pressure.Gradient
+26	Z Pressure.Gradient
+27	X Velocity u.Gradient
+28	Y Velocity u.Gradient
+29	Z Velocity u.Gradient
+30	X Velocity v.Gradient
+31	Y Velocity v.Gradient
+32	Z Velocity v.Gradient
+33	X Velocity w.Gradient
+34	Y Velocity w.Gradient
+35	Z Velocity w.Gradient
+36	Mesh Expansion factor
+37	orthogonality Angle
+38	Real Partition Number
+39	Specific Heat Capacity at Constant Volume
+40	Specific Volume
+41	X Wall Shear
+42	Y Wall Shear
+43	Z Wall Shear
+44	U
+45	V
+46	W
+47	U
+48	V
+49	W
+50	Dynamic Viscosity
+51	Node UserID
+52	Element UserId
+53	Material ID
+54	Part ID
+55	Property ID

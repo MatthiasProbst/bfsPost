@@ -1,0 +1,26 @@
+#!MC 1410
+$!VarSet |MFBD| = '/home/ws/ht72/Projekte/Forschungsprojekte/BackwardFacingStep2/cfx/100_basic'
+$!READDATASET  '"StandardSyntax" "1.0" "FEALoaderVersion" "436" "FILENAME_File" "RESFILEPATH" "AutoAssignStrandIDs" "Yes"'
+  DATASETREADER = 'ANSYS CFX (FEA)'
+$!CREATERECTANGULARZONE 
+  IMAX = 1
+  JMAX = 100
+  KMAX = 1
+  X1 = X1POS
+  Y1 = Y1POS
+  Z1 = 0
+  X2 = X2POS
+  Y2 = Y2POS
+  Z2 = 0
+$!RENAMEDATASETZONE ZONE = 6 NAME = 'CSVFILENAME'
+$!LINEARINTERPOLATE 
+  SOURCEZONES =  [1]
+  DESTINATIONZONE = 6
+  VARLIST =  [14,16,41,44-45]
+  LINEARINTERPCONST = 0
+  LINEARINTERPMODE = DONTCHANGE
+$!EXTENDEDCOMMAND 
+  COMMANDPROCESSORID = 'excsv'
+  # laminar case:
+  COMMAND = 'VarNames:FrOp=1:ZnCount=1:ZnList=[6]:VarCount=7:VarList=[1-2,14,16,41,44-45]:ValSep=",":FNAME="CSVFILENAMEPATH/CSVFILENAME.csv"'
+$!RemoveVar |MFBD|
